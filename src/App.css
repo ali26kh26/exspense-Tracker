@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.container {
+  background-color: white;
+  width: 50%;
+  margin: 100px auto;
+  border: 2px solid rgb(145, 142, 142);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.width {
+  width: 95%;
   display: flex;
   flex-direction: column;
+}
+.width h3 {
+  text-align: center;
+}
+.money {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 2px 5px;
+  width: 80px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.money span {
+  font-weight: bold;
+}
+.green {
+  border: 2px solid rgb(9, 170, 17);
+  color: rgb(9, 170, 17);
+}
+.red {
+  border: 2px solid rgb(201, 6, 6);
+  color: rgb(201, 6, 6);
+}
+#cancel {
+  border: 2px solid rgb(201, 6, 6);
+  color: rgb(201, 6, 6);
+  background-color: rgb(247, 230, 230);
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+  width: 60px;
+  height: 35px;
+  padding: 3px 5px;
+  border: 1px solid #6d28d9;
+  color: #6d28d9;
+  background-color: #ede9fe;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.submit {
+  background-color: #6d28d9;
   color: white;
+  border: none;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ccc;
+  background-color: #efefef;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  margin: 5px 0;
+}
+input[type="radio"] {
+  display: inline-block;
+  height: 15px;
+  margin-bottom: 10px;
+  width: 40px;
+  margin-left: 10px;
+}
+label {
+  /* margin-left: 3px; */
+}
+.transAction {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  background-color: rgb(241, 237, 237);
+}
+.transAction :last-child {
+  font-weight: bold;
+}
+#greenborder {
+  border-right: 6px solid rgb(9, 170, 17);
+}
+#redborder {
+  border-right: 6px solid rgb(201, 6, 6);
+}
+#search {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 5px 10px;
 }
